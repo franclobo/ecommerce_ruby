@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
   namespace :admin do
+    resources :stocks
+    resources :products
     resources :categories
   end
   devise_for :admins
