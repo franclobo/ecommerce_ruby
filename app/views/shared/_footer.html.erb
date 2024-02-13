@@ -1,0 +1,55 @@
+<footer class="bg-gray-800 text-white">
+  <div class="max-w-6xl mx-auto px-4 py-10 md:pt-20">
+    <div class="grid grid-cols-3 gap-8 md:gap-16">
+      <!-- Columna 1: Acerca de -->
+      <div class="md:col-span-1">
+        <h3 class="text-sm font-semibold text-gray-200 tracking-wider uppercase">Acerca de JB Manualidades</h3>
+        <p class="text-white leading-6 mt-4">
+          Somos una tienda de manualidades en línea que ofrece una gran variedad de productos para la decoración de su hogar.
+        </p>
+      </div>
+
+      <!-- Columna 2: Páginas -->
+      <div class="md:col-span-1">
+        <h3 class="text-sm font-semibold text-gray-200 tracking-wider uppercase">Páginas</h3>
+        <ul class="mt-4 space-y-4">
+          <li>
+            <%= link_to "Inicio", root_path, class: "text-base leading-6 text-white hover:text-gray-100" %>
+          </li>
+          <!-- Agrega más enlaces aquí -->
+        </ul>
+      </div>
+
+      <!-- Columna 3: Contacto -->
+      <div class="md:col-span-1">
+        <h3 class="text-sm font-semibold text-gray-200 tracking-wider uppercase">Contacto</h3>
+        <ul class="mt-4 space-y-4">
+          <li>
+            <p class="text-base leading-6 text-white">
+              <span class="text-gray-400">Dirección:</span><br> Madrid y Pontevedra 228, Quito - Ecuador
+            </p>
+          </li>
+          <li>
+            <p class="text-base leading-6 text-white">
+              <span class="text-gray-400">Teléfono:</span><br> (+593) 999049311
+            </p>
+          </li>
+          <li>
+            <p class="text-base leading-6 text-white">
+              <span class="text-gray-400">Redes Sociales:</span><br>
+            </p>
+            <%= link_to "https://www.instagram.com/jbmanualidades.uio/?igsh=ejlhNXgzbmFsOTRo", class: "text-white hover:underline py-2 rounded-md text-md font-medium" do %>
+              <%= icon('fa-brands', 'instagram', class: "mr-2") %>
+            <% end %>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+  <div class="md:col-span-3 border-t border-gray-700 mt-8 w-full">
+    <p class="text-base text-gray-400 p-8">
+      &copy; <%= Time.now.year %> JB Manualidades. Todos los derechos reservados.
+    </p>
+  </div>
+</footer>
