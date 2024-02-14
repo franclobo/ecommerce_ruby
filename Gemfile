@@ -76,3 +76,5 @@ gem "font-awesome-sass", "~> 6.5.1"
 gem "stripe", "~> 10.8"
 
 gem "paypal-recurring"
+
+gem "aws-sdk-s3", require: false
