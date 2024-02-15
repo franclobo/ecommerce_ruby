@@ -78,3 +78,5 @@ gem "stripe", "~> 10.8"
 gem "paypal-recurring"
 
 gem "aws-sdk-s3", require: false
+
+gem "dockerfile-rails", ">= 1.6", :group => :development
