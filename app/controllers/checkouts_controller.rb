@@ -33,8 +33,8 @@ class CheckoutsController < ApplicationController
     puts "line_items: #{line_items}"
 
     ppr = PayPal::Recurring.new({
-      :return_url   => "http://localhost:3000/success",
-      :cancel_url   => "http://localhost:3000/cancel",
+      :return_url   => "https://ecommerce-ruby.fly.dev//success",
+      :cancel_url   => "https://ecommerce-ruby.fly.dev//cancel",
       :description  => "El total de tu compra es de $#{cart.map{ |item| item["price"].to_i * item["quantity"].to_i }.sum} USD",
       :amount       => cart.map{ |item| item["price"].to_i * item["quantity"].to_i }.sum,
       :currency     => "USD"
