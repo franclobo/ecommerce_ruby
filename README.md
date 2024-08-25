@@ -2,7 +2,7 @@
 
 <div align="center">
 
-
+  <img src="./app/assets/images/logo.png" alt="Logo" width="80" height="80">
   <br/>
 
   <h3><b>Ecommerce Ruby</b></h3>
